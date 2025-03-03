@@ -7,11 +7,11 @@ find_package(Threads REQUIRED)
 # Enable testing
 include(GoogleTest)
 enable_testing()
-set(GTEST_DIR "${CMAKE_SOURCE_DIR}/googletest/googletest")
+set(GTEST_DIR "${PROJECT_SOURCE_DIR}/googletest/googletest")
 
 # Set a default build type if none was specified
 set(default_build_type "Release")
-if(EXISTS "${CMAKE_SOURCE_DIR}/.git")
+if(EXISTS "${PROJECT_SOURCE_DIR}/.git")
   set(default_build_type "Debug")
 endif()
 
